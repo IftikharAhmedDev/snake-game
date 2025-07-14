@@ -1,20 +1,19 @@
 from turtle import Turtle, Screen
-
 screen = Screen()
 screen.setup(600, 600)
 screen.bgcolor("black")
 screen.title("Snake Game")
 
-snake_segments = []
-snake = Turtle()
-snake.shape("circle")
-snake.color("Yellow")
-snake1 = Turtle()
-snake1.shape("circle")
-snake1.color("Yellow")
+positions = [(0, 0), (-20, 0), (-40, 0)]
+snake_body = []
 
-snake_segments.append(snake)
-print(snake_segments)
+for position in positions:
+    new_body = Turtle(shape="square")
+    new_body.color("Yellow")
+    new_body.goto(position)
+    snake_body.append(snake_body)
+
+print(snake_body)
 
 
 
